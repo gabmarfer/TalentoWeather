@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		566ECA801B711743006CF089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 566ECA7F1B711743006CF089 /* main.m */; };
+		566ECA831B711743006CF089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 566ECA821B711743006CF089 /* AppDelegate.m */; };
+		566ECA891B711743006CF089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA871B711743006CF089 /* Main.storyboard */; };
+		566ECA8B1B711743006CF089 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA8A1B711743006CF089 /* Images.xcassets */; };
+		566ECA8E1B711743006CF089 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA8C1B711743006CF089 /* LaunchScreen.xib */; };
+		56C50A041B71209600CFB7AE /* TMWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C50A031B71209600CFB7AE /* TMWMapViewController.m */; };
+		56C50A061B7122E600CFB7AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C50A051B7122E600CFB7AE /* MapKit.framework */; };
+		DDF5366CDCFD8A9DC526A035 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA5BA7033A00EE3A59F75E9 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		566ECA7A1B711743006CF089 /* TalentoWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentoWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		566ECA7E1B711743006CF089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566ECA7F1B711743006CF089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		566ECA811B711743006CF089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		566ECA821B711743006CF089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		566ECA881B711743006CF089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		566ECA8A1B711743006CF089 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		566ECA8D1B711743006CF089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		56C50A021B71209600CFB7AE /* TMWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMWMapViewController.h; path = Classes/ViewControllers/TMWMapViewController.h; sourceTree = "<group>"; };
+		56C50A031B71209600CFB7AE /* TMWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMWMapViewController.m; path = Classes/ViewControllers/TMWMapViewController.m; sourceTree = "<group>"; };
+		56C50A051B7122E600CFB7AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8D0D630FD10385E37D39C7B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B796224136A475C477EB534A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FEA5BA7033A00EE3A59F75E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		566ECA771B711743006CF089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C50A061B7122E600CFB7AE /* MapKit.framework in Frameworks */,
+				DDF5366CDCFD8A9DC526A035 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EAD62C5994287783059F04D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B796224136A475C477EB534A /* Pods.debug.xcconfig */,
+				8D0D630FD10385E37D39C7B3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		566ECA711B711743006CF089 = {
+			isa = PBXGroup;
+			children = (
+				566ECA7C1B711743006CF089 /* TalentoWeather */,
+				566ECA7B1B711743006CF089 /* Products */,
+				1EAD62C5994287783059F04D /* Pods */,
+				EFDDBEA167363B4CB029BE37 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		566ECA7B1B711743006CF089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				566ECA7A1B711743006CF089 /* TalentoWeather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		566ECA7C1B711743006CF089 /* TalentoWeather */ = {
+			isa = PBXGroup;
+			children = (
+				56C509FC1B711FC000CFB7AE /* Classes */,
+				566ECA811B711743006CF089 /* AppDelegate.h */,
+				566ECA821B711743006CF089 /* AppDelegate.m */,
+				566ECA871B711743006CF089 /* Main.storyboard */,
+				566ECA8A1B711743006CF089 /* Images.xcassets */,
+				566ECA8C1B711743006CF089 /* LaunchScreen.xib */,
+				566ECA7D1B711743006CF089 /* Supporting Files */,
+			);
+			path = TalentoWeather;
+			sourceTree = "<group>";
+		};
+		566ECA7D1B711743006CF089 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				566ECA7E1B711743006CF089 /* Info.plist */,
+				566ECA7F1B711743006CF089 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56C509FC1B711FC000CFB7AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				56C50A011B711FD900CFB7AE /* Custom */,
+				56C509FE1B711FCB00CFB7AE /* HTTPClient */,
+				56C50A001B711FD400CFB7AE /* Model */,
+				56C509FD1B711FC500CFB7AE /* ViewControllers */,
+				56C509FF1B711FD000CFB7AE /* Views */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		56C509FD1B711FC500CFB7AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56C50A021B71209600CFB7AE /* TMWMapViewController.h */,
+				56C50A031B71209600CFB7AE /* TMWMapViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		56C509FE1B711FCB00CFB7AE /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HTTPClient;
+			sourceTree = "<group>";
+		};
+		56C509FF1B711FD000CFB7AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		56C50A001B711FD400CFB7AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		56C50A011B711FD900CFB7AE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		EFDDBEA167363B4CB029BE37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56C50A051B7122E600CFB7AE /* MapKit.framework */,
+				FEA5BA7033A00EE3A59F75E9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		566ECA791B711743006CF089 /* TalentoWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566ECA9D1B711744006CF089 /* Build configuration list for PBXNativeTarget "TalentoWeather" */;
+			buildPhases = (
+				3874C8018FF329DA8631D685 /* Check Pods Manifest.lock */,
+				566ECA761B711743006CF089 /* Sources */,
+				566ECA771B711743006CF089 /* Frameworks */,
+				566ECA781B711743006CF089 /* Resources */,
+				477727B888F0EE63A085660A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalentoWeather;
+			productName = TalentoWeather;
+			productReference = 566ECA7A1B711743006CF089 /* TalentoWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		566ECA721B711743006CF089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = TalentoMobile;
+				TargetAttributes = {
+					566ECA791B711743006CF089 = {
+						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 566ECA751B711743006CF089 /* Build configuration list for PBXProject "TalentoWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 566ECA711B711743006CF089;
+			productRefGroup = 566ECA7B1B711743006CF089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				566ECA791B711743006CF089 /* TalentoWeather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		566ECA781B711743006CF089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566ECA891B711743006CF089 /* Main.storyboard in Resources */,
+				566ECA8E1B711743006CF089 /* LaunchScreen.xib in Resources */,
+				566ECA8B1B711743006CF089 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3874C8018FF329DA8631D685 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		477727B888F0EE63A085660A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		566ECA761B711743006CF089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566ECA831B711743006CF089 /* AppDelegate.m in Sources */,
+				56C50A041B71209600CFB7AE /* TMWMapViewController.m in Sources */,
+				566ECA801B711743006CF089 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		566ECA871B711743006CF089 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566ECA881B711743006CF089 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		566ECA8C1B711743006CF089 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566ECA8D1B711743006CF089 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		566ECA9B1B711744006CF089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		566ECA9C1B711744006CF089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		566ECA9E1B711744006CF089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B796224136A475C477EB534A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TalentoWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		566ECA9F1B711744006CF089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0D630FD10385E37D39C7B3 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TalentoWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		566ECA751B711743006CF089 /* Build configuration list for PBXProject "TalentoWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566ECA9B1B711744006CF089 /* Debug */,
+				566ECA9C1B711744006CF089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		566ECA9D1B711744006CF089 /* Build configuration list for PBXNativeTarget "TalentoWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566ECA9E1B711744006CF089 /* Debug */,
+				566ECA9F1B711744006CF089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 566ECA721B711743006CF089 /* Project object */;
+}
