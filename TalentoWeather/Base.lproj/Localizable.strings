@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  TalentoWeather
+
+  Created by gabmarfer on 05/08/15.
+  Copyright (c) 2015 TalentoMobile. All rights reserved.
+*/
+
+// Text
+"your_location" = "Your location";
+"historic_searches" = "Historic searches";
+"humidity_%@" = "Humidity: %@%";
+"windspeed_%@" = "Wind Speed: %@ km/h";
+
+// Alerts
+"alert_title_warning" = "Warning";
+"alert_title_error" = "Error";
+"alert_title_success" = "Success";
+"alert_title_message" = "Notice";
+"alert_message_generic_error" = "No working Internet connection is found.\nIf Wi-Fi is enabled, try disabling Wi-Fi or try another Wi-Fi hotspot.";
+"alert_message_invalid_query" = "Query cannot be empty.";
+"alert_message_location_disabled" = "Location services are disabled. Please, enable them to show your current location.";
+"alert_message_location_not_found" = "Location not found.";
+"alert_message_no_weather_found" = "There is no available weather info for the selected location.";
