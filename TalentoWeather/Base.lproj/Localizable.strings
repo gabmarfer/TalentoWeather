@@ -8,7 +8,7 @@
 
 // Text
 "your_location" = "Your location";
-"historic_searches" = "Historic searches";
+"historic_searches" = "Latest searches";
 "humidity_%@" = "Humidity: %@%";
 "windspeed_%@" = "Wind Speed: %@ km/h";
 

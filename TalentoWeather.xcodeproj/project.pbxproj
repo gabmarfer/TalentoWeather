@@ -32,6 +32,8 @@
 		566ECA891B711743006CF089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA871B711743006CF089 /* Main.storyboard */; };
 		566ECA8B1B711743006CF089 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA8A1B711743006CF089 /* Images.xcassets */; };
 		566ECA8E1B711743006CF089 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA8C1B711743006CF089 /* LaunchScreen.xib */; };
+		569DD42A1B733F7000DAAA5B /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 569DD4281B733F7000DAAA5B /* iTunesArtwork */; };
+		569DD42B1B733F7000DAAA5B /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 569DD4291B733F7000DAAA5B /* iTunesArtwork@2x */; };
 		56C50A041B71209600CFB7AE /* TMWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C50A031B71209600CFB7AE /* TMWMapViewController.m */; };
 		56C50A061B7122E600CFB7AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C50A051B7122E600CFB7AE /* MapKit.framework */; };
 		DDF5366CDCFD8A9DC526A035 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA5BA7033A00EE3A59F75E9 /* libPods.a */; };
@@ -87,6 +89,8 @@
 		566ECA881B711743006CF089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566ECA8A1B711743006CF089 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		566ECA8D1B711743006CF089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		569DD4281B733F7000DAAA5B /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		569DD4291B733F7000DAAA5B /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		56C50A021B71209600CFB7AE /* TMWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMWMapViewController.h; path = Classes/ViewControllers/TMWMapViewController.h; sourceTree = "<group>"; };
 		56C50A031B71209600CFB7AE /* TMWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMWMapViewController.m; path = Classes/ViewControllers/TMWMapViewController.m; sourceTree = "<group>"; };
 		56C50A051B7122E600CFB7AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -231,6 +235,8 @@
 		566ECA7C1B711743006CF089 /* TalentoWeather */ = {
 			isa = PBXGroup;
 			children = (
+				569DD4281B733F7000DAAA5B /* iTunesArtwork */,
+				569DD4291B733F7000DAAA5B /* iTunesArtwork@2x */,
 				56C509FC1B711FC000CFB7AE /* Classes */,
 				566ECA811B711743006CF089 /* AppDelegate.h */,
 				566ECA821B711743006CF089 /* AppDelegate.m */,
@@ -386,9 +392,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569DD42B1B733F7000DAAA5B /* iTunesArtwork@2x in Resources */,
 				566ECA891B711743006CF089 /* Main.storyboard in Resources */,
 				5669FC111B725D7A00402D18 /* Localizable.strings in Resources */,
 				566ECA8E1B711743006CF089 /* LaunchScreen.xib in Resources */,
+				569DD42A1B733F7000DAAA5B /* iTunesArtwork in Resources */,
 				566ECA8B1B711743006CF089 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -59,6 +59,7 @@ UISearchResultsUpdating, UITableViewDelegate, MKMapViewDelegate>
                                object:nil
                                 queue:[NSOperationQueue mainQueue]
                            usingBlock:^(NSNotification *note) {
+                               // Use custom alertView instead of UIAlertController
                                [GMNoticeView showDefaultNoticeWithTitle:NSLocalizedString(@"alert_title_warning", nil)
                                                                 message:NSLocalizedString(@"alert_message_location_disabled", nil)
                                                              noticeType:GMNoticeViewTypeWarning
@@ -145,6 +146,7 @@ UISearchResultsUpdating, UITableViewDelegate, MKMapViewDelegate>
                                                   }
                                                   else
                                                   {
+                                                      // Use custom alertView instead of UIAlertController
                                                       [GMNoticeView showDefaultNoticeWithTitle:NSLocalizedString(@"alert_title_error", nil)
                                                                                        message:error.localizedDescription
                                                                                     noticeType:GMNoticeViewTypeError
@@ -184,16 +186,11 @@ UISearchResultsUpdating, UITableViewDelegate, MKMapViewDelegate>
     }
 }
 
-#pragma mark --- UISearchControllerDelegate
-// Called after the search controller's search bar has agreed to begin editing or when
-// 'active' is set to YES.
-// If you choose not to present the controller yourself or do not implement this method,
-// a default presentation is performed on your behalf.
-//
-// Implement this method if the default presentation is not adequate for your purposes.
-//
+#pragma mark --- UISearchControllerDelegate 
+// Those methods are included just to show how to responde to UISearchController events
+
 - (void)presentSearchController:(UISearchController *)searchController {
-    
+    // Implement this method if the default presentation is not adequate for your purposes.
 }
 
 - (void)willPresentSearchController:(UISearchController *)searchController {
@@ -253,12 +250,13 @@ UISearchResultsUpdating, UITableViewDelegate, MKMapViewDelegate>
             // Add a detail accessory disclosure
             UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
             [rightButton setImage:[UIImage imageNamed:TMWMapAnnotionRightImage] forState:UIControlStateNormal];
+            rightButton.tintColor = [UIColor ownMainColor];
             [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
             pinView.rightCalloutAccessoryView = rightButton;
             
             // Add a custom image to the left side of the callout.
             UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TMWMapAnnotionLeftImage]];
-            myCustomImage.tintColor = [UIColor redColor];
+            myCustomImage.tintColor = [UIColor ownMainColor];
             pinView.leftCalloutAccessoryView = myCustomImage;
         }
         else {
@@ -285,6 +283,7 @@ UISearchResultsUpdating, UITableViewDelegate, MKMapViewDelegate>
     }
     else
     {
+        // Use custom alertView instead of UIAlertController
         [GMNoticeView showDefaultNoticeWithTitle:NSLocalizedString(@"alert_title_error", nil)
                                          message:NSLocalizedString(@"alert_message_no_weather_found", nil)
                                       noticeType:GMNoticeViewTypeError

@@ -12,6 +12,6 @@
 
 // Example
 + (UIColor *)ownMainColor {
-    return [UIColor blueColor];
+    return [UIColor colorWithHue:359/365.0f saturation:100/100.0f brightness:100/100.0f alpha:1.0f];
 }
 @end

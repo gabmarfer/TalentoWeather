@@ -24,7 +24,15 @@
     // Loggin web services calls
     [[AFNetworkActivityLogger sharedLogger] startLogging];
     
+    // Customize theme
+    [self customizeTheme];
+    
     return YES;
+}
+
+#pragma mark - Theme
+- (void)customizeTheme {
+    [UINavigationBar appearance].tintColor = [UIColor ownMainColor];
 }
 
 #pragma mark - Location services

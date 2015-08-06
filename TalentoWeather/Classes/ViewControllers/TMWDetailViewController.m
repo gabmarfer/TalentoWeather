@@ -16,8 +16,9 @@
 #import "TMWGeoPoint.h"
 #import "TMWPrediction.h"
 
+// Scales of the thermometer view
 static NSInteger const TMWDetailMaxTemperatureScale = 50;
-static NSInteger const TMWDetailMinTemperatureScale = 0;
+static NSInteger const TMWDetailMinTemperatureScale = -10;
 
 @interface TMWDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *bgView;
@@ -54,6 +55,8 @@ static NSInteger const TMWDetailMinTemperatureScale = 0;
     [super viewWillLayoutSubviews];
     
     // Animate filling of thermoView
+    // The colorView (within thermoView) will simulate the temperature. Calculate a proportional height depending on
+    // the current averague temperature value and the height of the thermoView on screen
     CGFloat colorViewHeight = (self.selectedPrediction.averageTemperature.floatValue * self.thermoView.bounds.size.height) /
     (TMWDetailMaxTemperatureScale - TMWDetailMinTemperatureScale);
     [self.colorView layoutIfNeeded];
