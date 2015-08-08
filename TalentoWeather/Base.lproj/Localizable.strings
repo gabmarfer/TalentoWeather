@@ -9,7 +9,7 @@
 // Text
 "your_location" = "Your location";
 "historic_searches" = "Latest searches";
-"humidity_%@" = "Humidity: %@%";
+"humidity_%@" = "Humidity: %@ %%";
 "windspeed_%@" = "Wind Speed: %@ km/h";
 
 // Alerts

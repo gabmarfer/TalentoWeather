@@ -120,7 +120,7 @@ static NSString * const TMWPredictionIconImageVeryHot = @"ic_veryhot";
         }
     }];
     
-    CGFloat average = temp/self.predictions.count;
+    NSInteger average = (int)roundf(temp/self.predictions.count);
     return @(average);
 }
 
@@ -203,7 +203,7 @@ static NSString * const TMWPredictionIconImageVeryHot = @"ic_veryhot";
 
 #pragma mark - Utilities
 - (TMWPredictionTempType)p_typeOfTemperature:(NSNumber *)temp {
-    int roundTemp = (int)roundf(temp.floatValue);
+    NSInteger roundTemp = temp.integerValue;
     if (roundTemp < TMWPredictionTempTypeCold) {
         return TMWPredictionTempTypeFrozen;
     } else if (roundTemp < TMWPredictionTempTypeWarm) {

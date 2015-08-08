@@ -11,7 +11,7 @@
 #import "TMWMeasure.h"
 
 // The limits of the temperature scale
-typedef NS_ENUM(NSUInteger, TMWPredictionTempType) {
+typedef NS_ENUM(NSInteger, TMWPredictionTempType) {
     TMWPredictionTempTypeFrozen = 0,
     TMWPredictionTempTypeCold = 10,
     TMWPredictionTempTypeWarm = 20,
