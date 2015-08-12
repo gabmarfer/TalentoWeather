@@ -32,6 +32,7 @@
 		566ECA891B711743006CF089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA871B711743006CF089 /* Main.storyboard */; };
 		566ECA8B1B711743006CF089 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA8A1B711743006CF089 /* Images.xcassets */; };
 		566ECA8E1B711743006CF089 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566ECA8C1B711743006CF089 /* LaunchScreen.xib */; };
+		568DB04F1B7B2FDB00A51DFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 568DB04E1B7B2FDB00A51DFD /* GoogleService-Info.plist */; };
 		569DD42A1B733F7000DAAA5B /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 569DD4281B733F7000DAAA5B /* iTunesArtwork */; };
 		569DD42B1B733F7000DAAA5B /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 569DD4291B733F7000DAAA5B /* iTunesArtwork@2x */; };
 		56C50A041B71209600CFB7AE /* TMWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C50A031B71209600CFB7AE /* TMWMapViewController.m */; };
@@ -89,6 +90,7 @@
 		566ECA881B711743006CF089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566ECA8A1B711743006CF089 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		566ECA8D1B711743006CF089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		568DB04E1B7B2FDB00A51DFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		569DD4281B733F7000DAAA5B /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		569DD4291B733F7000DAAA5B /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		56C50A021B71209600CFB7AE /* TMWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMWMapViewController.h; path = Classes/ViewControllers/TMWMapViewController.h; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 		566ECA7D1B711743006CF089 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				568DB04E1B7B2FDB00A51DFD /* GoogleService-Info.plist */,
 				566ECA7E1B711743006CF089 /* Info.plist */,
 				566ECA7F1B711743006CF089 /* main.m */,
 				5669FC131B725D7A00402D18 /* Localizable.strings */,
@@ -398,6 +401,7 @@
 				566ECA8E1B711743006CF089 /* LaunchScreen.xib in Resources */,
 				569DD42A1B733F7000DAAA5B /* iTunesArtwork in Resources */,
 				566ECA8B1B711743006CF089 /* Images.xcassets in Resources */,
+				568DB04F1B7B2FDB00A51DFD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +587,7 @@
 			baseConfigurationReference = B796224136A475C477EB534A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gabriel Martelo Fernandez (296VYJDFN9)";
 				INFOPLIST_FILE = TalentoWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,6 +599,8 @@
 			baseConfigurationReference = 8D0D630FD10385E37D39C7B3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = TalentoWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

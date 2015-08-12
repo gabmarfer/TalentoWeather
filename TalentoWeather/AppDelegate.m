@@ -11,6 +11,7 @@
 @import CoreLocation;
 #import "AFNetworkActivityLogger.h"
 #import "TalentoWeatherUtils.h"
+#import <Google/Analytics.h>
 
 @interface AppDelegate () <CLLocationManagerDelegate>
 
@@ -23,6 +24,15 @@
     
     // Loggin web services calls
     [[AFNetworkActivityLogger sharedLogger] startLogging];
+    
+    // Configure tracker from GoogleService-Info.plist.
+    NSError *configureError;
+    [[GGLContext sharedInstance] configureWithError:&configureError];
+    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
+    // Optional: configure GAI options.
+    GAI *gai = [GAI sharedInstance];
+    gai.trackUncaughtExceptions = YES;  // report uncaught exceptions
+    gai.logger.logLevel = kGAILogLevelError;  // remove before app release
     
     // Customize theme
     [self customizeTheme];
